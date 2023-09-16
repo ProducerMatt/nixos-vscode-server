@@ -21,7 +21,7 @@
           home = self.homeModules.default; # Backwards compatiblity.
         };
       # Consistent with homeConfigurations.
-      homeModules.default = let
+      homeModules = let
         modules = import ./modules/home.nix;
       in
         modules
